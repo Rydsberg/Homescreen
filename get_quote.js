@@ -7,7 +7,7 @@ document.scripts[document.scripts.length - 1].parentNode.appendChild(container12
 
 var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = process;
-xhr.open("GET", "/quotes.txt", true);
+xhr.open("GET", "quotes.txt", true);
 xhr.send();
 
 function process()
