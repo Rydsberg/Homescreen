@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Informationsskärmar - Rydsberg</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,700,900" rel="stylesheet"> 
+        <link href="style.css" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/luxon@1.21.1/build/global/luxon.min.js"></script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="column">
+                <div class="time-div">
+                    <img id="ornament" src="/christmas_ornament_small.png" />
+                    <script src="clock.js" type="text/javascript"></script>
+                </div>
+                    
+                <div class="rss-div">
+                    <img class="skolmaten-logo" src="skolmaten-logo.svg" width="75px" height="75px">
+                    <script src="https://rss2html--evla03.repl.co/feed.js?url=https://skolmaten.se/rydsbergsskolan/rss/weeks/" class="rss" item-width="50%">Refreshing...</script>
+                </div>
+            </div>
+            <div class="column"><!--Column 2-->
+                
+                <!--<script type='text/javascript' src='https://darksky.net/widget/default/57.7699,12.2689/ca12/en.js?width=100%&height=350&title=Lerum&textColor=000000&bgColor=transparent&transparency=true&skyColor=000000&fontFamily=Verdana&customFont=&units=ca&htColor=000000&ltColor=000000&displaySum=yes&displayHeader=yes' class="weather">Refreshing...</script>Weather widget-->
+                <!-- <div id="weather-div">
+                    <a class="weatherwidget-io" href="https://forecast7.com/sv/57d7712d27/lerum/" data-label_1="LERUM" data-label_2="Väder" data-font="Verdana" data-icons="Iconvault" data-days="5"></a>
+                    <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                    </script>
+                </div> -->
+                <div id="vasttrafik">
+                    <!-- <div id="vast-lerum">Uppdaterar...</div>
+                    <div id="vast-hack">Uppdaterar...</div> -->
+                    Uppdaterar...
+                </div>
+                <!--<p id="text-box"></p>-->
+                <p id="text-box"></p>
+                <!--<script type="text/javascript" src="https://home.evla.info/script.js">Cant run js</script>-->
+                <script src="fetch.js"></script>
+                <!--<script src="morphImage.js"></script>-->
+            </div>
+        </div>
+        <div id="footer">
+            <div id="quote" class="row">
+                <script src="get_quote.js">Refreshing...</script> <!--https://rss2html-evla03.repl.co/feed.js?url=http://www.quotationspage.com/data/mqotd.rss&limit=1&no-titles=true-->
+                
+            </div>
+        </div>
+        <img id="lerumlogo" src="/lerumslogga.svg" />
+        <script src="vasttrafik.js" type="text/javascript"></script>
+    </body>
+</html>

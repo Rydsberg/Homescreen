@@ -1,0 +1,244 @@
+/*Universal*/
+body {
+    background-color: white;
+    overflow: hidden;
+    font-family: 'M PLUS 1p', Verdana, Geneva;
+    color:black;
+    margin-bottom:100px;
+    overflow-y: hidden;
+    /* background-image: url("/imgs/yosemite.jpg");*/
+    background-position: center;
+    background-size: cover;
+    font-size: 25px;
+}
+
+html {
+    overflow: hidden;
+}
+
+/* .skolmaten-logo {
+    transform: scale(1.1);
+} */
+
+a {
+    text-decoration: none;
+}
+
+/*Columns and rows*/
+.column {
+    float: left;
+    width: 50%;
+    /* padding-left: 75px;
+    padding-right: 75px; */
+}
+
+.row {
+    margin: 0 75px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Styling*/
+.rss-div {
+    padding-left: 50px;
+    color: black;
+    font-family: 'M PLUS 1p', Verdana, Geneva;
+    font-size: 22px;
+    line-height: 23px;
+}
+
+.feed-title {
+    line-height: 42px;
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+.feed-item-title * {
+    font-size: 27px;
+    line-height: 0px;
+    font-weight: bolder;
+}
+
+.feed-item-desc {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+#quote-text{
+    padding: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    vertical-align: super;
+    color: rgb(135, 135, 135);
+    font-family: 'IM Fell Double Pica';
+    font-size: 23px;
+    line-height: 0;
+
+}
+
+.time-div {
+    text-align: center;
+    padding: 0px;
+    padding-top: 17px;
+    font-size: 50px;
+    color: black;
+    font-family: 'M PLUS 1p', Verdana, Geneva;
+    font-weight: 900;
+    /*line-height: 0px;*/
+    margin: 0;
+    
+}
+
+#date-time {
+    font-weight: normal;
+    margin: 0;
+    height: 50px;
+}
+
+#clock-time {
+    font-weight: 900;
+    padding-top: 0px;
+    margin: 0;
+    height: 50px;
+}
+
+#text-box{
+    font-size: 25px;
+    /*text-align: justify;*/
+    padding: 10px;
+    padding-right: 20px;
+}
+
+#default-attribution *{
+    width: 0px;
+    height: 0px;
+    color: white;
+}
+
+#footer{
+    position: fixed;
+    height: 85px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.637);
+}
+
+.rss2html-note * {
+    font-size: 0px;
+    
+}
+
+#weather-div {
+    padding-top: 25px;
+}
+
+#weather-div * {
+    
+    width: 100%;
+    font-size: 20px;
+    margin: auto;
+}
+
+#quote {
+    width: 90%;
+}
+
+#lerumlogo {
+    right: 15px;
+    bottom: 15px;
+    position: fixed;
+    width: 75px;
+}
+
+#ornament {
+    position: fixed;
+    top: 0;
+    right: 50px;
+    width: 200px;
+    z-index: 1;
+    opacity: 1;
+    /*animation: swing 3s ease-in-out infinite;*/
+    transform-origin: top center;
+    display: none;
+}
+/*
+@keyframes swing{
+    0% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(15deg);
+    }
+}*/
+
+#vasttrafik {
+    font-size: 1.6rem;
+    margin-top: 20px;
+    font-weight: 600;
+    line-height: 45px;
+    position: relative;
+}
+#vasttrafik div, #vasttrafik nobusses {
+    margin: 8px 0;
+    width: 60%;
+    
+}
+
+#vasttrafik::before {
+    content: "Avgångar från Rydsbergsskolan:";
+    font-size: 30px;
+}
+
+#vasttrafik span {
+    text-align: right;
+    float: right;
+}
+
+#vasttrafik span.vast-late {
+    text-decoration: line-through;
+    text-decoration-thickness: 3px;
+}
+
+#vasttrafik span.vast-late-new-time {
+    color: red;
+}
+
+#vasttrafik div linebadge, #vasttrafik nobusses {
+    font-size: 1em;
+    content: "530";
+    padding: 3px 7px;
+    margin-right: 10px;
+    border-radius: 4px;
+    background-color: rgb(201, 201, 201);
+    color: white;
+}
+
+#vasttrafik nobusses {
+    display: block;
+    color: black;
+}
+
+#vasttrafik infoicon {
+    background-image: url("/infoicon.svg");
+    width: 1em;
+    height: 1em;
+    left: -40px;
+    margin: 11.5px 0;
+    position: absolute;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+#morph-image {
+    height: 458px;
+}

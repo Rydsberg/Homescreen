@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+        #grid {
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-rows: 3fr 10fr 1fr;
+            grid-template-columns: 2fr 3fr;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid">
+        <article id="clock">
+            <div id="time">0:00:00</div>
+            <div id="date">1/01-70</div>
+        </article>
+        <article id="departures"></article>
+
+        <article id="food"></article>
+        <article id="custom"></article>
+
+        <footer id="quote"></footer>
+    </div>
+</body>
+</html>
